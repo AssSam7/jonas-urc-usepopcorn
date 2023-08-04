@@ -1,12 +1,11 @@
 import { useState } from "react";
+import ListBox from "./components/ListBox";
 import Main from "./components/Main";
+import MovieList from "./components/MovieList";
 import Navbar from "./components/Navbar";
 import NumResults from "./components/NumResults";
 import Search from "./components/Search";
-import ListBox from "./components/ListBox";
 import WatchedBox from "./components/WatchedBox";
-import MovieList from "./components/MovieList";
-import Movie from "./components/Movie";
 
 const tempMovieData = [
   {
