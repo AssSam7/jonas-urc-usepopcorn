@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 
@@ -52,11 +53,14 @@ const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
 
 export default function App() {
+  const [movies, setMovies] = useState(tempMovieData);
+
   return (
     <>
-      <Navbar />
+      <Navbar movies={movies} />
 
       <Main
+        movies={movies}
         tempMovieData={tempMovieData}
         tempWatchedData={tempWatchedData}
         average={average}
